@@ -5,6 +5,7 @@ from PIL import Image
 model_load = pickle.load(open('./Model/lastest_prediction_model', 'rb'))
 
 def run():
+    
     img1 = Image.open('image2.jpg')
     st.header("Bank loan prediction using Machine Learning")
     st.image(img1, use_column_width=False)
